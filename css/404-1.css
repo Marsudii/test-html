@@ -1,0 +1,100 @@
+body.sticky-miles #miles-flown:where(.astro-JZCK3TYJ) {
+    transform: translateY(0)
+}
+
+body.sticky-menu #fixed-menu:where(.astro-PUX6A34N) {
+    transform: translateY(0)
+}
+
+#fixed-menu:where(.astro-PUX6A34N):has(#nav-checkbox:checked) {
+    transform: translateY(0)
+}
+
+.hamburger:where(.astro-PUX6A34N) {
+    position: relative;
+    display: block;
+    width: 32px;
+    height: 32px
+}
+
+.hamburger:where(.astro-PUX6A34N) span:where(.astro-PUX6A34N), .hamburger:where(.astro-PUX6A34N):before, .hamburger:where(.astro-PUX6A34N):after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 32px;
+    background: #fbfbfb;
+    transition: .3s ease;
+    position: absolute;
+    top: calc(50% - 1px)
+}
+
+.hamburger:where(.astro-PUX6A34N):hover span:where(.astro-PUX6A34N), .hamburger:where(.astro-PUX6A34N):hover:before, .hamburger:where(.astro-PUX6A34N):hover:after {
+    background: #22F55D
+}
+
+.hamburger--black:where(.astro-PUX6A34N) span:where(.astro-PUX6A34N), .hamburger--black:where(.astro-PUX6A34N):before, .hamburger--black:where(.astro-PUX6A34N):after {
+    background: #000
+}
+
+.hamburger:where(.astro-PUX6A34N):before {
+    transform: translateY(-8px)
+}
+
+.hamburger:where(.astro-PUX6A34N):after {
+    transform: translateY(8px)
+}
+
+#nav-checkbox:where(.astro-PUX6A34N):checked ~ :where(.astro-PUX6A34N) .hamburger:where(.astro-PUX6A34N) span:where(.astro-PUX6A34N), #nav-checkbox:where(.astro-PUX6A34N):checked ~ :where(.astro-PUX6A34N) .hamburger:where(.astro-PUX6A34N):before, #nav-checkbox:where(.astro-PUX6A34N):checked ~ :where(.astro-PUX6A34N) .hamburger:where(.astro-PUX6A34N):after {
+    background: #fbfbfb
+}
+
+#nav-checkbox:where(.astro-PUX6A34N):checked ~ :where(.astro-PUX6A34N) .hamburger:where(.astro-PUX6A34N):hover span:where(.astro-PUX6A34N), #nav-checkbox:where(.astro-PUX6A34N):checked ~ :where(.astro-PUX6A34N) .hamburger:where(.astro-PUX6A34N):hover:before, #nav-checkbox:where(.astro-PUX6A34N):checked ~ :where(.astro-PUX6A34N) .hamburger:where(.astro-PUX6A34N):hover:after {
+    background: #22F55D
+}
+
+#nav-checkbox:where(.astro-PUX6A34N):checked ~ :where(.astro-PUX6A34N) .hamburger:where(.astro-PUX6A34N) span:where(.astro-PUX6A34N) {
+    opacity: 0
+}
+
+#nav-checkbox:where(.astro-PUX6A34N):checked ~ :where(.astro-PUX6A34N) .hamburger:where(.astro-PUX6A34N):before {
+    transform: rotate(45deg)
+}
+
+#nav-checkbox:where(.astro-PUX6A34N):checked ~ :where(.astro-PUX6A34N) .hamburger:where(.astro-PUX6A34N):after {
+    transform: rotate(-45deg)
+}
+
+.footer-content:where(.astro-GCN2MC3V) {
+    position: relative;
+    padding-bottom: 5rem;
+    margin-bottom: 22.75rem
+}
+
+.footer-content:where(.astro-GCN2MC3V):after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-image: url(/image/barcode-footer-vertical.svg);
+    background-size: 100%;
+    width: 100%;
+    height: 27.75rem;
+    bottom: -22.75rem
+}
+
+.repeatable-indication:where(.astro-GCN2MC3V):before, .repeatable-indication:where(.astro-GCN2MC3V):after {
+    content: "";
+    display: block;
+    width: 6.25rem;
+    height: 3px;
+    background-color: #000
+}
+
+html {
+    font-size: 4vw
+}
+
+@media (min-width: 375px) {
+    html {
+        font-size: 16px
+    }
+}

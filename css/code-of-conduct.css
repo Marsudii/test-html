@@ -1,0 +1,34 @@
+.icon-heading:where(.astro-JMYCOZ2K):before, .icon-heading:where(.astro-JMYCOZ2K):after {
+    content: "";
+    display: block;
+    grid-row: 1;
+    align-self: center
+}
+
+.icon-heading:where(.astro-JMYCOZ2K):before {
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 3px;
+    background-color: #000
+}
+
+.icon-heading:where(.astro-JMYCOZ2K):after {
+    grid-column: 6 / span 2;
+    background-color: #fbfbfb;
+    height: 2.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain
+}
+
+.icon-heading--globe:where(.astro-JMYCOZ2K):after {
+    background-image: url(/image/icon-heading-globe.svg)
+}
+
+.icon-heading--ticket:where(.astro-JMYCOZ2K):after {
+    background-image: url(/image/icon-heading-ticket.svg)
+}
+
+.icon-heading--suitcase:where(.astro-JMYCOZ2K):after {
+    background-image: url(/image/icon-heading-suitcase.svg)
+}
